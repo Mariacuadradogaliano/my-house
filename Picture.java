@@ -9,6 +9,8 @@
  * @author  Michael Kolling and David J. Barnes
  * @version 2011.07.31
  */
+
+
 public class Picture
 {
     private Square wall;
@@ -16,7 +18,7 @@ public class Picture
     private Triangle roof;
     private Circle sun;
     private Circle moon;
-    
+    private Square grass;
     /**
      * Constructor for objects of class Picture
      */
@@ -48,21 +50,33 @@ public class Picture
         roof.moveHorizontal(20);
         roof.moveVertical(-60);
         roof.makeVisible();
+        
+        grass = new Square();
+        grass.changeColor("green");
+        grass.moveVertical(140);
+        grass.moveHorizontal(-500);
+        grass.changeSize(700);
+        grass.makeVisible();
 
         sun = new Circle();
         sun.changeColor("yellow");
         sun.moveHorizontal(100);
+        sun.makeVisible();
         sun.moveVertical(-40);
         sun.changeSize(80);
-        sun.makeVisible();
+        sun.slowMoveVertical(290);
+
         
         moon = new Circle();
         moon.changeColor("magenta");
         moon.changeSize(40);
         moon.moveHorizontal(-150);
+        moon.moveVertical(250);
         moon.makeVisible();
+        moon.slowMoveVertical(-250);
         
     }
+    
 
     /**
      * Change this picture to black/white display
