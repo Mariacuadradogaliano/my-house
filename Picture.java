@@ -33,6 +33,18 @@ public class Picture
     moon.makeInvisible();
     sun.slowMoveVertical(-300);
     
+    person2 = new Person();
+        person2.moveVertical(30);
+        person2.moveHorizontal(-250);
+        person2.makeVisible();
+        person2.slowMoveHorizontal(130);
+        
+        person1 = new Person();
+        person1.moveVertical(30);
+        person1.moveHorizontal(180);
+        person1.makeVisible();
+        person1.slowMoveHorizontal(-160);
+    
     }
     /**
      * Draw this picture.
@@ -82,17 +94,6 @@ public class Picture
         moon.makeVisible();
         moon.slowMoveVertical(-250);
         
-        person2 = new Person();
-        person2.moveVertical(30);
-        person2.moveHorizontal(-250);
-        person2.makeVisible();
-        person2.slowMoveHorizontal(130);
-        
-        person1 = new Person();
-        person1.moveVertical(30);
-        person1.moveHorizontal(180);
-        person1.makeVisible();
-        person1.slowMoveHorizontal(-160);
         
     }
     
