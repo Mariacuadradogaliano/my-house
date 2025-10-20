@@ -26,7 +26,12 @@ public class Picture
     {
         // nothing to do... instance variables are automatically set to null
     }
-
+    public void amanecer() {
+        
+    moon.makeInvisible();
+    sun.slowMoveVertical(-300);
+    
+    }
     /**
      * Draw this picture.
      */
